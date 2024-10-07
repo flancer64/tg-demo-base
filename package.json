@@ -1,0 +1,15 @@
+{
+  "name": "@flancer64/tg-demo-base",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alex Gusev <alex@flancer64.com>",
+  "license": "ISC",
+  "description": "Telegram Bots: The First Steps",
+  "dependencies": {
+    "@flancer32/teq-telegram-bot": "^0.1.1"
+  }
+}
