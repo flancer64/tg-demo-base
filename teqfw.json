@@ -1,0 +1,13 @@
+{
+  "@teqfw/di": {
+    "autoload": {
+      "ns": "MyBot",
+      "path": "./src"
+    },
+    "replaces": {
+      "Telegram_Bot_Back_Api_Setup": {
+        "back": "MyBot_Back_Bot_Setup"
+      }
+    }
+  }
+}
