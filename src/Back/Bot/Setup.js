@@ -7,7 +7,7 @@ export default class MyBot_Back_Bot_Setup {
         // INSTANCE METHODS
         this.commands = function (bot) {
             bot.api.setMyCommands([
-                {command: 'help', description: 'Display this text.'},
+                {command: 'help', description: 'Get help.'},
                 {command: 'settings', description: 'Configure bot settings.'},
                 {command: 'start', description: 'Start using the bot.'},
             ]);
@@ -18,20 +18,19 @@ export default class MyBot_Back_Bot_Setup {
             bot.command('help', (ctx) => {
                 const msg = `
 Available commands:
-
-<b>/help</b> - Display this text.
-<b>/settings</b> - Configure bot settings.
-<b>/start</b> - Start using the bot.
+<b>/help</b> - Display this help message.
+<b>/settings</b> - Adjust your bot settings.
+<b>/start</b> - Start interacting with the bot.
 `;
                 ctx.reply(msg, {
                     parse_mode: 'HTML',
                 });
             });
             bot.command('settings', (ctx) => {
-                ctx.reply('Configure bot settings.');
+                ctx.reply('Here you can configure your bot settings.');
             });
             bot.command('start', (ctx) => {
-                ctx.reply('Start using the bot.');
+                ctx.reply('Welcome! You can start using the bot.');
             });
             return bot;
         };

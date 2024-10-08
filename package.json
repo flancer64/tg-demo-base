@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "start": "./bin/tequila.mjs tg-bot-start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
